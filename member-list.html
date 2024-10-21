@@ -72,7 +72,7 @@
                 </div>
               </button>
               <div class="dropdown-container">
-                <a href="#">Member List</a>
+                <a href="member-list.html">Member List</a>
               </div>
             </div>
             <div class="sidebar-links">
@@ -86,10 +86,10 @@
                 </div>
               </button>
               <div class="dropdown-container">
-                <a href="#">Order List</a>
-                <a href="#">Withdrawl List</a>
-                <a href="#">Recharge List</a>
-                <a href="#">Transaction Flow</a>
+                <a href="order-list.html">Order List</a>
+                <a href="withdraw-list.html">Withdrawl List</a>
+                <a href="recharge-list.html">Recharge List</a>
+                <a href="transaction-flow.html">Transaction Flow</a>
               </div>
             </div>
             <div class="sidebar-links">
@@ -103,7 +103,7 @@
                 </div>
               </button>
               <div class="dropdown-container">
-                <a href="#">Interest Treasure Record</a>
+                <a href="interest-treasure-record.html">Interest Treasure Record</a>
               </div>
             </div>
           </div>
@@ -142,7 +142,7 @@
                 <h4>John Doe</h4>
                 <button class="profile-btn"><i class="fa-sharp fa-regular fa-chevron-down text-sm"></i></button>
                 <div class="profile-dropdown" style="display: none;">
-                  <a href="#">Change Password</a>
+                  <a href="change-password.html">Change Password</a>
                   <a href="login.html">Logout</a>
                 </div>
               </div>
@@ -158,8 +158,8 @@
   </div>
 
   <!-- Member List Section -->
-  <div class="container mx-auto mt-8 bg-white p-6 rounded-lg shadow">
-    <h1 class="text-2xl font-semibold mb-4">Member List</h1>
+  <div class="container mx-auto  bg-white p-6 rounded-lg shadow">
+    <h1 class="text-2xl font-semibold mb-4 ">Member List</h1>
 
     <!-- Search Filters -->
     <div class="grid grid-cols-4 gap-4 mb-6">
@@ -186,6 +186,7 @@
     </div>
 
     <!-- Scrollable Member Table -->
+   <div id="scrollable-data">
     <div class="scrollable-table">
       <table class="min-w-full bg-white border-collapse border border-gray-300">
         <thead>
@@ -318,6 +319,139 @@
           </tbody>
         </table>
       </div>
+      <div class="scrollable-table">
+        <table class="min-w-full bg-white border-collapse border border-gray-300">
+          <thead>
+            <tr class="bg-gray-100">
+              <th class="border border-gray-300 p-2">ID</th>
+              <th class="border border-gray-300 p-2">Member account</th>
+              <th class="border border-gray-300 p-2">Member phone number</th>
+              <th class="border border-gray-300 p-2">Owning agent</th>
+              <th class="border border-gray-300 p-2">Member Level</th>
+              <th class="border border-gray-300 p-2">Balance</th>
+              <th class="border border-gray-300 p-2">Superior ID</th>
+              <th class="border border-gray-300 p-2">Number of subordinate members</th>
+              <th class="border border-gray-300 p-2">Maximum amount of daily statements</th>
+              <th class="border border-gray-300 p-2">Today’s order quantity</th>
+              <th class="border border-gray-300 p-2">Today's commission</th>
+              <th class="border border-gray-300 p-2">Freeze balance</th>
+              <th class="border border-gray-300 p-2">Credibility</th>
+              <th class="border border-gray-300 p-2">multiples of consecutive orders</th>
+              <th class="border border-gray-300 p-2">Invitation code</th>
+              <th class="border border-gray-300 p-2">Member type</th>
+              <th class="border border-gray-300 p-2">Member status</th>
+              <th class="border border-gray-300 p-2">Register IP</th>
+              <th class="border border-gray-300 p-2">Login IP</th>
+              <th class="border border-gray-300 p-2">Last login time</th>
+              <th class="border border-gray-300 p-2">Member status</th>
+              <th class="border border-gray-300 p-2">Creation Time</th>
+              <th class="border border-gray-300 p-2 sticky" id="operate">Operate</th> <!-- Fixed column -->
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 p-2 text-center">19025</td>
+              <td class="border border-gray-300 p-2 text-center">Crycry</td>
+              <td class="border border-gray-300 p-2 text-center">79994097288</td>
+              <td class="border border-gray-300 p-2 text-center">-</td>
+              <td class="border border-gray-300 p-2 text-center">VIP1</td>
+              <td class="border border-gray-300 p-2 text-center">-27,335.11</td>
+              <td class="border border-gray-300 p-2 text-center">94</td>
+              <td class="border border-gray-300 p-2 text-center">0</td>
+              <td class="border border-gray-300 p-2 text-center">30</td>
+              <td class="border border-gray-300 p-2 text-center">15</td>
+              <td class="border border-gray-300 p-2 text-center">190.53</td>
+              <td class="border border-gray-300 p-2 text-center">0.33</td>
+              <td class="border border-gray-300 p-2 text-center">100%</td>
+              <td class="border border-gray-300 p-2 text-center">30</td>
+              <td class="border border-gray-300 p-2 text-center">757678</td>
+              <td class="border border-gray-300 p-2 text-center"><button class="border px-1 rounded text-green-600 bg-lime-100 border-green-600">Real</button></td>
+              <td class="border border-gray-300 p-2 text-center">Normal</td>
+              <td class="border border-gray-300 p-2 text-center">Normal</td>
+              <td class="border border-gray-300 p-2 text-center">2a03:d00</td>
+              <td class="border border-gray-300 p-2 text-center">2a03:d00</td>
+              <td class="border border-gray-300 p-2 text-center">-</td>
+              <td class="border border-gray-300 p-2 text-center">2024-10-20 15:46:01</td>
+              <td class="border border-gray-300 p-2 text-center sticky space-y-2" id="operate-btns">
+                <button class="bg-gray-200 px-2 py-1 rounded text-sm">Edit</button>
+                <button class="bg-blue-500 text-white px-2 py-1 rounded text-sm">Continuous orders</button>
+                <button class="bg-blue-500 text-white px-2 py-1 rounded text-sm">System increase or deduction</button>
+                <button class="bg-gray-200 px-2 py-1 rounded text-sm">Withdrawal method</button>
+                <button class="bg-yellow-400 text-white px-2 py-1 rounded text-sm">Reset transaction count</button>
+                <button class="bg-red-500 text-white px-2 py-1 rounded text-sm">Delete</button>
+              </td>
+            </tr>
+            <!-- Add more rows here if needed -->
+          </tbody>
+        </table>
+      </div>
+      <div class="scrollable-table">
+        <table class="min-w-full bg-white border-collapse border border-gray-300">
+          <thead>
+            <tr class="bg-gray-100">
+              <th class="border border-gray-300 p-2">ID</th>
+              <th class="border border-gray-300 p-2">Member account</th>
+              <th class="border border-gray-300 p-2">Member phone number</th>
+              <th class="border border-gray-300 p-2">Owning agent</th>
+              <th class="border border-gray-300 p-2">Member Level</th>
+              <th class="border border-gray-300 p-2">Balance</th>
+              <th class="border border-gray-300 p-2">Superior ID</th>
+              <th class="border border-gray-300 p-2">Number of subordinate members</th>
+              <th class="border border-gray-300 p-2">Maximum amount of daily statements</th>
+              <th class="border border-gray-300 p-2">Today’s order quantity</th>
+              <th class="border border-gray-300 p-2">Today's commission</th>
+              <th class="border border-gray-300 p-2">Freeze balance</th>
+              <th class="border border-gray-300 p-2">Credibility</th>
+              <th class="border border-gray-300 p-2">multiples of consecutive orders</th>
+              <th class="border border-gray-300 p-2">Invitation code</th>
+              <th class="border border-gray-300 p-2">Member type</th>
+              <th class="border border-gray-300 p-2">Member status</th>
+              <th class="border border-gray-300 p-2">Register IP</th>
+              <th class="border border-gray-300 p-2">Login IP</th>
+              <th class="border border-gray-300 p-2">Last login time</th>
+              <th class="border border-gray-300 p-2">Member status</th>
+              <th class="border border-gray-300 p-2">Creation Time</th>
+              <th class="border border-gray-300 p-2 sticky" id="operate">Operate</th> <!-- Fixed column -->
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 p-2 text-center">19025</td>
+              <td class="border border-gray-300 p-2 text-center">Crycry</td>
+              <td class="border border-gray-300 p-2 text-center">79994097288</td>
+              <td class="border border-gray-300 p-2 text-center">-</td>
+              <td class="border border-gray-300 p-2 text-center">VIP1</td>
+              <td class="border border-gray-300 p-2 text-center">-27,335.11</td>
+              <td class="border border-gray-300 p-2 text-center">94</td>
+              <td class="border border-gray-300 p-2 text-center">0</td>
+              <td class="border border-gray-300 p-2 text-center">30</td>
+              <td class="border border-gray-300 p-2 text-center">15</td>
+              <td class="border border-gray-300 p-2 text-center">190.53</td>
+              <td class="border border-gray-300 p-2 text-center">0.33</td>
+              <td class="border border-gray-300 p-2 text-center">100%</td>
+              <td class="border border-gray-300 p-2 text-center">30</td>
+              <td class="border border-gray-300 p-2 text-center">757678</td>
+              <td class="border border-gray-300 p-2 text-center"><button class="border px-1 rounded text-green-600 bg-lime-100 border-green-600">Real</button></td>
+              <td class="border border-gray-300 p-2 text-center">Normal</td>
+              <td class="border border-gray-300 p-2 text-center">Normal</td>
+              <td class="border border-gray-300 p-2 text-center">2a03:d00</td>
+              <td class="border border-gray-300 p-2 text-center">2a03:d00</td>
+              <td class="border border-gray-300 p-2 text-center">-</td>
+              <td class="border border-gray-300 p-2 text-center">2024-10-20 15:46:01</td>
+              <td class="border border-gray-300 p-2 text-center sticky space-y-2" id="operate-btns">
+                <button class="bg-gray-200 px-2 py-1 rounded text-sm">Edit</button>
+                <button class="bg-blue-500 text-white px-2 py-1 rounded text-sm">Continuous orders</button>
+                <button class="bg-blue-500 text-white px-2 py-1 rounded text-sm">System increase or deduction</button>
+                <button class="bg-gray-200 px-2 py-1 rounded text-sm">Withdrawal method</button>
+                <button class="bg-yellow-400 text-white px-2 py-1 rounded text-sm">Reset transaction count</button>
+                <button class="bg-red-500 text-white px-2 py-1 rounded text-sm">Delete</button>
+              </td>
+            </tr>
+            <!-- Add more rows here if needed -->
+          </tbody>
+        </table>
+      </div>
+   </div>
   </div>
 
 
