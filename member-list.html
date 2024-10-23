@@ -1,461 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking Admin</title>
-    <link rel="stylesheet" href="dashboard.css">
-     <!-- link with fontawesome -->
-     <script src="https://cdn.tailwindcss.com"></script>
-     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.0/dist/tailwind.min.css" rel="stylesheet">
-     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-     <link
-     rel="stylesheet"
-     data-purpose="Layout StyleSheet"
-     title="Web Awesome"
-     href="/css/app-wa-54e7be3a62ca9b7580d7f8c669f59e74.css?vsn=d"
-   />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Admin</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <!-- link with fontawesome -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.0/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
+    href="/css/app-wa-54e7be3a62ca9b7580d7f8c669f59e74.css?vsn=d" />
 
-   <link
-     rel="stylesheet"
-     href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
-   />
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css" />
 
-   <link
-     rel="stylesheet"
-     href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css"
-   />
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css" />
 
-   <link
-     rel="stylesheet"
-     href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css"
-   />
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css" />
 
-   <link
-     rel="stylesheet"
-     href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css"
-   />
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css" />
 
-   <link
-     rel="stylesheet"
-     href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css"
-   />
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css" />
 
-   <link
-     rel="stylesheet"
-     href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css"
-   />
-   <!-- google fonts -->
-   <link rel="preconnect" href="https://fonts.googleapis.com" />
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-   <link
-     href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
-     rel="stylesheet"
-   />
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css" />
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
 </head>
+
 <body>
-    <div class="sidebar">
-        <div class="admindek">
-          <img src="assets/images/side-bar/logo.png" alt="LOGO" style="color: #fff;" />
+  <div class="sidebar">
+    <div class="admindek">
+      <img src="assets/images/side-bar/logo.png" alt="LOGO" style="color: #fff;" />
+    </div>
+    <div class="navigation sidebar-headings">
+      <h5>Dashboard</h5>
+      <div class="sidebar-links-container">
+        <div class="sidebar-links">
+          <button class="dropdown-btn flex">
+            <div class="flex">
+              <i class="fa-regular fa-user"></i>
+              <h5>Member Management</h5>
+            </div>
+            <div class="p-x">
+              <i class="fa-regular fa-chevron-down"></i>
+            </div>
+          </button>
+          <div class="dropdown-container">
+            <a href="member-list.html">Member List</a>
+          </div>
         </div>
-        <div class="navigation sidebar-headings">
-          <h5>Dashboard</h5>
-          <div class="sidebar-links-container">
-            <div class="sidebar-links">
-              <button class="dropdown-btn flex">
-                <div class="flex">
-                    <i class="fa-regular fa-user"></i>
-                  <h5>Member Management</h5>
-                </div>
-                <div class="p-x">
-                  <i class="fa-regular fa-chevron-down"></i>
-                </div>
-              </button>
-              <div class="dropdown-container">
-                <a href="member-list.html">Member List</a>
-              </div>
+        <div class="sidebar-links">
+          <button class="dropdown-btn flex">
+            <div class="flex">
+              <i class="fa-regular fa-clipboard"></i>
+              <h5>Transaction Management</h5>
             </div>
-            <div class="sidebar-links">
-              <button class="dropdown-btn flex">
-                <div class="flex">
-                    <i class="fa-regular fa-clipboard"></i>
-                  <h5>Transaction Management</h5>
-                </div>
-                <div class="p-x">
-                  <i class="fa-regular fa-chevron-down"></i>
-                </div>
-              </button>
-              <div class="dropdown-container">
-                <a href="order-list.html">Order List</a>
-                <a href="withdraw-list.html">Withdrawl List</a>
-                <a href="recharge-list.html">Recharge List</a>
-                <a href="transaction-flow.html">Transaction Flow</a>
-              </div>
+            <div class="p-x">
+              <i class="fa-regular fa-chevron-down"></i>
             </div>
-            <div class="sidebar-links">
-              <button class="dropdown-btn flex">
-                <div class="flex">
-                    <i class="fa-light fa-calendar-days"></i>
-                  <h5>Interest Treasure Management</h5>
-                </div>
-                <div class="p-x">
-                  <i class="fa-regular fa-chevron-down"></i>
-                </div>
-              </button>
-              <div class="dropdown-container">
-                <a href="interest-treasure-record.html">Interest Treasure Record</a>
-              </div>
+          </button>
+          <div class="dropdown-container">
+            <a href="order-list.html">Order List</a>
+            <a href="withdraw-list.html">Withdrawl List</a>
+            <a href="recharge-list.html">Recharge List</a>
+            <a href="transaction-flow.html">Transaction Flow</a>
+          </div>
+        </div>
+        <div class="sidebar-links">
+          <button class="dropdown-btn flex">
+            <div class="flex">
+              <i class="fa-light fa-calendar-days"></i>
+              <h5>Interest Treasure Management</h5>
             </div>
+            <div class="p-x">
+              <i class="fa-regular fa-chevron-down"></i>
+            </div>
+          </button>
+          <div class="dropdown-container">
+            <a href="interest-treasure-record.html">Interest Treasure Record</a>
           </div>
         </div>
       </div>
-    <!-- RIGHT_CONTAINER -->
-     <div class="main-container">
-        <div class="search-bar flex">
-            <div class="search-and-zoom flex">
-              <div class="search">
-                <button class="clear-btn"><i class="far fa-times"></i></button>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Enter Keyword"
-                />
-                <button class="search-btn"><i class="far fa-search" title="search something"></i></button>
-              </div>
-              <div class="zoom">
-                <button><i class="fa-sharp fa-regular fa-expand"></i></button>
-              </div>
-            </div>
-            <div class="notfication-message-profile">
-              <button class="relative">
-                <!-- <i class="fa-light fa-bell"></i> -->
-                 <span class="text-sm font-semibold">Withdraw</span>
-                 <span class="p-1 rounded-full bg-red-700 text-xs text-white font-medium absolute top-0.5 mx-1">34</span>
-            </button>
-              <button class="relative">
-                <!-- <i class="fa-light fa-message"></i> -->
-                 <span class="text-sm font-semibold">Deposit</span>
-                 <span class="p-1 rounded-full bg-red-700 text-xs text-white font-medium absolute top-0.5 mx-1">07</span>
-            </button>
-              <div class="profile flex">
-                <img src="assets/images/search-bar/avatar-4.jpg" alt="profile pic" title="profile"/>
-                <h4>John Doe</h4>
-                <button class="profile-btn"><i class="fa-sharp fa-regular fa-chevron-down text-sm"></i></button>
-                <div class="profile-dropdown" style="display: none;">
-                  <a href="change-password.html">Change Password</a>
-                  <a href="login.html">Logout</a>
-                </div>
-              </div>
-            </div>
+    </div>
+  </div>
+  <!-- RIGHT_CONTAINER -->
+  <div class="main-container">
+    <div class="search-bar flex">
+      <div class="search-and-zoom flex">
+        <div class="search">
+          <button class="clear-btn"><i class="far fa-times"></i></button>
+          <input type="text" class="form-control" placeholder="Enter Keyword" />
+          <button class="search-btn"><i class="far fa-search" title="search something"></i></button>
+        </div>
+        <div class="zoom">
+          <button><i class="fa-sharp fa-regular fa-expand"></i></button>
+        </div>
+      </div>
+      <div class="notfication-message-profile">
+        <button class="relative">
+          <!-- <i class="fa-light fa-bell"></i> -->
+          <span class="text-sm font-semibold">Withdraw</span>
+          <span class="p-1 rounded-full bg-red-700 text-xs text-white font-medium absolute top-0.5 mx-1">34</span>
+        </button>
+        <button class="relative">
+          <!-- <i class="fa-light fa-message"></i> -->
+          <span class="text-sm font-semibold">Deposit</span>
+          <span class="p-1 rounded-full bg-red-700 text-xs text-white font-medium absolute top-0.5 mx-1">07</span>
+        </button>
+        <div class="profile flex">
+          <img src="assets/images/search-bar/avatar-4.jpg" alt="profile pic" title="profile" />
+          <h4>John Doe</h4>
+          <button class="profile-btn"><i class="fa-sharp fa-regular fa-chevron-down text-sm"></i></button>
+          <div class="profile-dropdown" style="display: none;">
+            <a href="change-password.html">Change Password</a>
+            <a href="login.html">Logout</a>
           </div>
-            <!-- Navigation Tabs -->
-  <div class="bg-white shadow-sm p-4">
-    <div class="container mx-auto flex items-center space-x-4">
-      <button class="px-4 py-2 bg-blue-500 text-white rounded-md"><a href="index.html">Home</a></button>
-      <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-md">Member List <a href="index.html" class="fa-regular fa-xmark"></a></button>
-      <!-- <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-md">Withdrawal List</button> -->
+        </div>
+      </div>
+    </div>
+    <!-- Navigation Tabs -->
+    <div class="bg-white shadow-sm p-4">
+      <div class="container mx-auto flex items-center space-x-4">
+        <button class="px-4 py-2 bg-blue-500 text-white rounded-md"><a href="index.html">Home</a></button>
+        <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-md">Member List <a href="index.html"
+            class="fa-regular fa-xmark"></a></button>
+        <!-- <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-md">Withdrawal List</button> -->
+      </div>
+    </div>
+
+    <!-- Member List Section -->
+    <div class="container mx-auto  bg-white p-6 rounded-lg shadow">
+      <h1 class="text-2xl font-semibold mb-4 ">Member List</h1>
+
+      <!-- Search Filters -->
+      <div class="grid grid-cols-4 gap-4 mb-6">
+        <input type="text" placeholder="Member account" class="border p-2 rounded w-full">
+        <input type="text" placeholder="Member phone number" class="border p-2 rounded w-full">
+        <input type="text" placeholder="Owning agent" class="border p-2 rounded w-full">
+        <div></div> <!-- Empty space for alignment -->
+
+        <!-- Dropdown Filters -->
+        <select class="border p-2 rounded w-full">
+          <option>Member type</option>
+          <option value="VIP1">VIP1</option>
+          <option value="Regular">Regular</option>
+        </select>
+
+        <select class="border p-2 rounded w-full">
+          <option>Member status</option>
+          <option value="Active">Active</option>
+          <option value="Inactive">Inactive</option>
+        </select>
+
+        <!-- Search Button -->
+        <button class="bg-blue-500 text-white px-4 py-2 rounded">Search</button>
+      </div>
+
+      <!-- Scrollable Member Table -->
+      <div id="scrollable-data">
+        <div class="scrollable-table">
+          <table class="min-w-full bg-white border-collapse border border-gray-300">
+            <thead>
+              <tr class="bg-gray-100">
+                <th class="border border-gray-300 p-2">ID</th>
+                <th class="border border-gray-300 p-2">Member account</th>
+                <th class="border border-gray-300 p-2">Member phone number</th>
+                <th class="border border-gray-300 p-2">Owning agent</th>
+                <th class="border border-gray-300 p-2">Member Level</th>
+                <th class="border border-gray-300 p-2">Balance</th>
+                <th class="border border-gray-300 p-2">Superior ID</th>
+                <th class="border border-gray-300 p-2">Number of subordinate members</th>
+                <th class="border border-gray-300 p-2">Maximum amount of daily statements</th>
+                <th class="border border-gray-300 p-2">Today’s order quantity</th>
+                <th class="border border-gray-300 p-2">Today's commission</th>
+                <th class="border border-gray-300 p-2">Freeze balance</th>
+                <th class="border border-gray-300 p-2">Credibility</th>
+                <th class="border border-gray-300 p-2">multiples of consecutive orders</th>
+                <th class="border border-gray-300 p-2">Invitation code</th>
+                <th class="border border-gray-300 p-2">Member type</th>
+                <th class="border border-gray-300 p-2">Member status</th>
+                <th class="border border-gray-300 p-2">Register IP</th>
+                <th class="border border-gray-300 p-2">Login IP</th>
+                <th class="border border-gray-300 p-2">Last login time</th>
+                <th class="border border-gray-300 p-2">Member status</th>
+                <th class="border border-gray-300 p-2">Creation Time</th>
+                <th class="border border-gray-300 p-2 sticky" id="operate">Operate</th> <!-- Fixed column -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border border-gray-300 p-2 text-center">19025</td>
+                <td class="border border-gray-300 p-2 text-center">Crycry</td>
+                <td class="border border-gray-300 p-2 text-center">79994097288</td>
+                <td class="border border-gray-300 p-2 text-center">-</td>
+                <td class="border border-gray-300 p-2 text-center">VIP1</td>
+                <td class="border border-gray-300 p-2 text-center">-27,335.11</td>
+                <td class="border border-gray-300 p-2 text-center">94</td>
+                <td class="border border-gray-300 p-2 text-center">0</td>
+                <td class="border border-gray-300 p-2 text-center">30</td>
+                <td class="border border-gray-300 p-2 text-center">15</td>
+                <td class="border border-gray-300 p-2 text-center">190.53</td>
+                <td class="border border-gray-300 p-2 text-center">0.33</td>
+                <td class="border border-gray-300 p-2 text-center">100%</td>
+                <td class="border border-gray-300 p-2 text-center">30</td>
+                <td class="border border-gray-300 p-2 text-center">757678</td>
+                <td class="border border-gray-300 p-2 text-center"><button
+                    class="border px-1 rounded text-green-600 bg-lime-100 border-green-600">Real</button></td>
+                <td class="border border-gray-300 p-2 text-center">Normal</td>
+                <td class="border border-gray-300 p-2 text-center">Normal</td>
+                <td class="border border-gray-300 p-2 text-center">2a03:d00</td>
+                <td class="border border-gray-300 p-2 text-center">2a03:d00</td>
+                <td class="border border-gray-300 p-2 text-center">-</td>
+                <td class="border border-gray-300 p-2 text-center">2024-10-20 15:46:01</td>
+                <td class="border border-gray-300 p-2 text-center sticky space-y-2" id="operate-btns">
+                  <button class="bg-gray-200 px-2 py-1 rounded text-sm">Edit</button>
+                  <button class="bg-blue-500 text-white px-2 py-1 rounded text-sm">Continuous orders</button>
+                  <button class="bg-blue-500 text-white px-2 py-1 rounded text-sm">System increase or deduction</button>
+                  <button class="bg-gray-200 px-2 py-1 rounded text-sm">Withdrawal method</button>
+                  <button class="bg-yellow-400 text-white px-2 py-1 rounded text-sm">Reset transaction count</button>
+                  <button class="bg-red-500 text-white px-2 py-1 rounded text-sm">Delete</button>
+                </td>
+              </tr>
+              <!-- Add more rows here if needed -->
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
   </div>
-
-  <!-- Member List Section -->
-  <div class="container mx-auto  bg-white p-6 rounded-lg shadow">
-    <h1 class="text-2xl font-semibold mb-4 ">Member List</h1>
-
-    <!-- Search Filters -->
-    <div class="grid grid-cols-4 gap-4 mb-6">
-      <input type="text" placeholder="Member account" class="border p-2 rounded w-full">
-      <input type="text" placeholder="Member phone number" class="border p-2 rounded w-full">
-      <input type="text" placeholder="Owning agent" class="border p-2 rounded w-full">
-      <div></div> <!-- Empty space for alignment -->
-      
-      <!-- Dropdown Filters -->
-      <select class="border p-2 rounded w-full">
-        <option>Member type</option>
-        <option value="VIP1">VIP1</option>
-        <option value="Regular">Regular</option>
-      </select>
-      
-      <select class="border p-2 rounded w-full">
-        <option>Member status</option>
-        <option value="Active">Active</option>
-        <option value="Inactive">Inactive</option>
-      </select>
-
-      <!-- Search Button -->
-      <button class="bg-blue-500 text-white px-4 py-2 rounded">Search</button>
-    </div>
-
-    <!-- Scrollable Member Table -->
-   <div id="scrollable-data">
-    <div class="scrollable-table">
-      <table class="min-w-full bg-white border-collapse border border-gray-300">
-        <thead>
-          <tr class="bg-gray-100">
-            <th class="border border-gray-300 p-2">ID</th>
-            <th class="border border-gray-300 p-2">Member account</th>
-            <th class="border border-gray-300 p-2">Member phone number</th>
-            <th class="border border-gray-300 p-2">Owning agent</th>
-            <th class="border border-gray-300 p-2">Member Level</th>
-            <th class="border border-gray-300 p-2">Balance</th>
-            <th class="border border-gray-300 p-2">Superior ID</th>
-            <th class="border border-gray-300 p-2">Number of subordinate members</th>
-            <th class="border border-gray-300 p-2">Maximum amount of daily statements</th>
-            <th class="border border-gray-300 p-2">Today’s order quantity</th>
-            <th class="border border-gray-300 p-2">Today's commission</th>
-            <th class="border border-gray-300 p-2">Freeze balance</th>
-            <th class="border border-gray-300 p-2">Credibility</th>
-            <th class="border border-gray-300 p-2">multiples of consecutive orders</th>
-            <th class="border border-gray-300 p-2">Invitation code</th>
-            <th class="border border-gray-300 p-2">Member type</th>
-            <th class="border border-gray-300 p-2">Member status</th>
-            <th class="border border-gray-300 p-2">Register IP</th>
-            <th class="border border-gray-300 p-2">Login IP</th>
-            <th class="border border-gray-300 p-2">Last login time</th>
-            <th class="border border-gray-300 p-2">Member status</th>
-            <th class="border border-gray-300 p-2">Creation Time</th>
-            <th class="border border-gray-300 p-2 sticky" id="operate">Operate</th> <!-- Fixed column -->
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="border border-gray-300 p-2 text-center">19025</td>
-            <td class="border border-gray-300 p-2 text-center">Crycry</td>
-            <td class="border border-gray-300 p-2 text-center">79994097288</td>
-            <td class="border border-gray-300 p-2 text-center">-</td>
-            <td class="border border-gray-300 p-2 text-center">VIP1</td>
-            <td class="border border-gray-300 p-2 text-center">-27,335.11</td>
-            <td class="border border-gray-300 p-2 text-center">94</td>
-            <td class="border border-gray-300 p-2 text-center">0</td>
-            <td class="border border-gray-300 p-2 text-center">30</td>
-            <td class="border border-gray-300 p-2 text-center">15</td>
-            <td class="border border-gray-300 p-2 text-center">190.53</td>
-            <td class="border border-gray-300 p-2 text-center">0.33</td>
-            <td class="border border-gray-300 p-2 text-center">100%</td>
-            <td class="border border-gray-300 p-2 text-center">30</td>
-            <td class="border border-gray-300 p-2 text-center">757678</td>
-            <td class="border border-gray-300 p-2 text-center"><button class="border px-1 rounded text-green-600 bg-lime-100 border-green-600">Real</button></td>
-            <td class="border border-gray-300 p-2 text-center">Normal</td>
-            <td class="border border-gray-300 p-2 text-center">Normal</td>
-            <td class="border border-gray-300 p-2 text-center">2a03:d00</td>
-            <td class="border border-gray-300 p-2 text-center">2a03:d00</td>
-            <td class="border border-gray-300 p-2 text-center">-</td>
-            <td class="border border-gray-300 p-2 text-center">2024-10-20 15:46:01</td>
-            <td class="border border-gray-300 p-2 text-center sticky space-y-2" id="operate-btns">
-              <button class="bg-gray-200 px-2 py-1 rounded text-sm">Edit</button>
-              <button class="bg-blue-500 text-white px-2 py-1 rounded text-sm">Continuous orders</button>
-              <button class="bg-blue-500 text-white px-2 py-1 rounded text-sm">System increase or deduction</button>
-              <button class="bg-gray-200 px-2 py-1 rounded text-sm">Withdrawal method</button>
-              <button class="bg-yellow-400 text-white px-2 py-1 rounded text-sm">Reset transaction count</button>
-              <button class="bg-red-500 text-white px-2 py-1 rounded text-sm">Delete</button>
-            </td>
-          </tr>
-          <!-- Add more rows here if needed -->
-        </tbody>
-      </table>
-    </div>
-    <div class="scrollable-table">
-        <table class="min-w-full bg-white border-collapse border border-gray-300">
-          <thead>
-            <tr class="bg-gray-100">
-              <th class="border border-gray-300 p-2">ID</th>
-              <th class="border border-gray-300 p-2">Member account</th>
-              <th class="border border-gray-300 p-2">Member phone number</th>
-              <th class="border border-gray-300 p-2">Owning agent</th>
-              <th class="border border-gray-300 p-2">Member Level</th>
-              <th class="border border-gray-300 p-2">Balance</th>
-              <th class="border border-gray-300 p-2">Superior ID</th>
-              <th class="border border-gray-300 p-2">Number of subordinate members</th>
-              <th class="border border-gray-300 p-2">Maximum amount of daily statements</th>
-              <th class="border border-gray-300 p-2">Today’s order quantity</th>
-              <th class="border border-gray-300 p-2">Today's commission</th>
-              <th class="border border-gray-300 p-2">Freeze balance</th>
-              <th class="border border-gray-300 p-2">Credibility</th>
-              <th class="border border-gray-300 p-2">multiples of consecutive orders</th>
-              <th class="border border-gray-300 p-2">Invitation code</th>
-              <th class="border border-gray-300 p-2">Member type</th>
-              <th class="border border-gray-300 p-2">Member status</th>
-              <th class="border border-gray-300 p-2">Register IP</th>
-              <th class="border border-gray-300 p-2">Login IP</th>
-              <th class="border border-gray-300 p-2">Last login time</th>
-              <th class="border border-gray-300 p-2">Member status</th>
-              <th class="border border-gray-300 p-2">Creation Time</th>
-              <th class="border border-gray-300 p-2 sticky" id="operate">Operate</th> <!-- Fixed column -->
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="border border-gray-300 p-2 text-center">19025</td>
-              <td class="border border-gray-300 p-2 text-center">Crycry</td>
-              <td class="border border-gray-300 p-2 text-center">79994097288</td>
-              <td class="border border-gray-300 p-2 text-center">-</td>
-              <td class="border border-gray-300 p-2 text-center">VIP1</td>
-              <td class="border border-gray-300 p-2 text-center">-27,335.11</td>
-              <td class="border border-gray-300 p-2 text-center">94</td>
-              <td class="border border-gray-300 p-2 text-center">0</td>
-              <td class="border border-gray-300 p-2 text-center">30</td>
-              <td class="border border-gray-300 p-2 text-center">15</td>
-              <td class="border border-gray-300 p-2 text-center">190.53</td>
-              <td class="border border-gray-300 p-2 text-center">0.33</td>
-              <td class="border border-gray-300 p-2 text-center">100%</td>
-              <td class="border border-gray-300 p-2 text-center">30</td>
-              <td class="border border-gray-300 p-2 text-center">757678</td>
-              <td class="border border-gray-300 p-2 text-center"><button class="border px-1 rounded text-green-600 bg-lime-100 border-green-600">Real</button></td>
-              <td class="border border-gray-300 p-2 text-center">Normal</td>
-              <td class="border border-gray-300 p-2 text-center">Normal</td>
-              <td class="border border-gray-300 p-2 text-center">2a03:d00</td>
-              <td class="border border-gray-300 p-2 text-center">2a03:d00</td>
-              <td class="border border-gray-300 p-2 text-center">-</td>
-              <td class="border border-gray-300 p-2 text-center">2024-10-20 15:46:01</td>
-              <td class="border border-gray-300 p-2 text-center sticky space-y-2" id="operate-btns">
-                <button class="bg-gray-200 px-2 py-1 rounded text-sm">Edit</button>
-                <button class="bg-blue-500 text-white px-2 py-1 rounded text-sm">Continuous orders</button>
-                <button class="bg-blue-500 text-white px-2 py-1 rounded text-sm">System increase or deduction</button>
-                <button class="bg-gray-200 px-2 py-1 rounded text-sm">Withdrawal method</button>
-                <button class="bg-yellow-400 text-white px-2 py-1 rounded text-sm">Reset transaction count</button>
-                <button class="bg-red-500 text-white px-2 py-1 rounded text-sm">Delete</button>
-              </td>
-            </tr>
-            <!-- Add more rows here if needed -->
-          </tbody>
-        </table>
-      </div>
-      <div class="scrollable-table">
-        <table class="min-w-full bg-white border-collapse border border-gray-300">
-          <thead>
-            <tr class="bg-gray-100">
-              <th class="border border-gray-300 p-2">ID</th>
-              <th class="border border-gray-300 p-2">Member account</th>
-              <th class="border border-gray-300 p-2">Member phone number</th>
-              <th class="border border-gray-300 p-2">Owning agent</th>
-              <th class="border border-gray-300 p-2">Member Level</th>
-              <th class="border border-gray-300 p-2">Balance</th>
-              <th class="border border-gray-300 p-2">Superior ID</th>
-              <th class="border border-gray-300 p-2">Number of subordinate members</th>
-              <th class="border border-gray-300 p-2">Maximum amount of daily statements</th>
-              <th class="border border-gray-300 p-2">Today’s order quantity</th>
-              <th class="border border-gray-300 p-2">Today's commission</th>
-              <th class="border border-gray-300 p-2">Freeze balance</th>
-              <th class="border border-gray-300 p-2">Credibility</th>
-              <th class="border border-gray-300 p-2">multiples of consecutive orders</th>
-              <th class="border border-gray-300 p-2">Invitation code</th>
-              <th class="border border-gray-300 p-2">Member type</th>
-              <th class="border border-gray-300 p-2">Member status</th>
-              <th class="border border-gray-300 p-2">Register IP</th>
-              <th class="border border-gray-300 p-2">Login IP</th>
-              <th class="border border-gray-300 p-2">Last login time</th>
-              <th class="border border-gray-300 p-2">Member status</th>
-              <th class="border border-gray-300 p-2">Creation Time</th>
-              <th class="border border-gray-300 p-2 sticky" id="operate">Operate</th> <!-- Fixed column -->
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="border border-gray-300 p-2 text-center">19025</td>
-              <td class="border border-gray-300 p-2 text-center">Crycry</td>
-              <td class="border border-gray-300 p-2 text-center">79994097288</td>
-              <td class="border border-gray-300 p-2 text-center">-</td>
-              <td class="border border-gray-300 p-2 text-center">VIP1</td>
-              <td class="border border-gray-300 p-2 text-center">-27,335.11</td>
-              <td class="border border-gray-300 p-2 text-center">94</td>
-              <td class="border border-gray-300 p-2 text-center">0</td>
-              <td class="border border-gray-300 p-2 text-center">30</td>
-              <td class="border border-gray-300 p-2 text-center">15</td>
-              <td class="border border-gray-300 p-2 text-center">190.53</td>
-              <td class="border border-gray-300 p-2 text-center">0.33</td>
-              <td class="border border-gray-300 p-2 text-center">100%</td>
-              <td class="border border-gray-300 p-2 text-center">30</td>
-              <td class="border border-gray-300 p-2 text-center">757678</td>
-              <td class="border border-gray-300 p-2 text-center"><button class="border px-1 rounded text-green-600 bg-lime-100 border-green-600">Real</button></td>
-              <td class="border border-gray-300 p-2 text-center">Normal</td>
-              <td class="border border-gray-300 p-2 text-center">Normal</td>
-              <td class="border border-gray-300 p-2 text-center">2a03:d00</td>
-              <td class="border border-gray-300 p-2 text-center">2a03:d00</td>
-              <td class="border border-gray-300 p-2 text-center">-</td>
-              <td class="border border-gray-300 p-2 text-center">2024-10-20 15:46:01</td>
-              <td class="border border-gray-300 p-2 text-center sticky space-y-2" id="operate-btns">
-                <button class="bg-gray-200 px-2 py-1 rounded text-sm">Edit</button>
-                <button class="bg-blue-500 text-white px-2 py-1 rounded text-sm">Continuous orders</button>
-                <button class="bg-blue-500 text-white px-2 py-1 rounded text-sm">System increase or deduction</button>
-                <button class="bg-gray-200 px-2 py-1 rounded text-sm">Withdrawal method</button>
-                <button class="bg-yellow-400 text-white px-2 py-1 rounded text-sm">Reset transaction count</button>
-                <button class="bg-red-500 text-white px-2 py-1 rounded text-sm">Delete</button>
-              </td>
-            </tr>
-            <!-- Add more rows here if needed -->
-          </tbody>
-        </table>
-      </div>
-      <div class="scrollable-table">
-        <table class="min-w-full bg-white border-collapse border border-gray-300">
-          <thead>
-            <tr class="bg-gray-100">
-              <th class="border border-gray-300 p-2">ID</th>
-              <th class="border border-gray-300 p-2">Member account</th>
-              <th class="border border-gray-300 p-2">Member phone number</th>
-              <th class="border border-gray-300 p-2">Owning agent</th>
-              <th class="border border-gray-300 p-2">Member Level</th>
-              <th class="border border-gray-300 p-2">Balance</th>
-              <th class="border border-gray-300 p-2">Superior ID</th>
-              <th class="border border-gray-300 p-2">Number of subordinate members</th>
-              <th class="border border-gray-300 p-2">Maximum amount of daily statements</th>
-              <th class="border border-gray-300 p-2">Today’s order quantity</th>
-              <th class="border border-gray-300 p-2">Today's commission</th>
-              <th class="border border-gray-300 p-2">Freeze balance</th>
-              <th class="border border-gray-300 p-2">Credibility</th>
-              <th class="border border-gray-300 p-2">multiples of consecutive orders</th>
-              <th class="border border-gray-300 p-2">Invitation code</th>
-              <th class="border border-gray-300 p-2">Member type</th>
-              <th class="border border-gray-300 p-2">Member status</th>
-              <th class="border border-gray-300 p-2">Register IP</th>
-              <th class="border border-gray-300 p-2">Login IP</th>
-              <th class="border border-gray-300 p-2">Last login time</th>
-              <th class="border border-gray-300 p-2">Member status</th>
-              <th class="border border-gray-300 p-2">Creation Time</th>
-              <th class="border border-gray-300 p-2 sticky" id="operate">Operate</th> <!-- Fixed column -->
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="border border-gray-300 p-2 text-center">19025</td>
-              <td class="border border-gray-300 p-2 text-center">Crycry</td>
-              <td class="border border-gray-300 p-2 text-center">79994097288</td>
-              <td class="border border-gray-300 p-2 text-center">-</td>
-              <td class="border border-gray-300 p-2 text-center">VIP1</td>
-              <td class="border border-gray-300 p-2 text-center">-27,335.11</td>
-              <td class="border border-gray-300 p-2 text-center">94</td>
-              <td class="border border-gray-300 p-2 text-center">0</td>
-              <td class="border border-gray-300 p-2 text-center">30</td>
-              <td class="border border-gray-300 p-2 text-center">15</td>
-              <td class="border border-gray-300 p-2 text-center">190.53</td>
-              <td class="border border-gray-300 p-2 text-center">0.33</td>
-              <td class="border border-gray-300 p-2 text-center">100%</td>
-              <td class="border border-gray-300 p-2 text-center">30</td>
-              <td class="border border-gray-300 p-2 text-center">757678</td>
-              <td class="border border-gray-300 p-2 text-center"><button class="border px-1 rounded text-green-600 bg-lime-100 border-green-600">Real</button></td>
-              <td class="border border-gray-300 p-2 text-center">Normal</td>
-              <td class="border border-gray-300 p-2 text-center">Normal</td>
-              <td class="border border-gray-300 p-2 text-center">2a03:d00</td>
-              <td class="border border-gray-300 p-2 text-center">2a03:d00</td>
-              <td class="border border-gray-300 p-2 text-center">-</td>
-              <td class="border border-gray-300 p-2 text-center">2024-10-20 15:46:01</td>
-              <td class="border border-gray-300 p-2 text-center sticky space-y-2" id="operate-btns">
-                <button class="bg-gray-200 px-2 py-1 rounded text-sm">Edit</button>
-                <button class="bg-blue-500 text-white px-2 py-1 rounded text-sm">Continuous orders</button>
-                <button class="bg-blue-500 text-white px-2 py-1 rounded text-sm">System increase or deduction</button>
-                <button class="bg-gray-200 px-2 py-1 rounded text-sm">Withdrawal method</button>
-                <button class="bg-yellow-400 text-white px-2 py-1 rounded text-sm">Reset transaction count</button>
-                <button class="bg-red-500 text-white px-2 py-1 rounded text-sm">Delete</button>
-              </td>
-            </tr>
-            <!-- Add more rows here if needed -->
-          </tbody>
-        </table>
-      </div>
-   </div>
-  </div>
-
-
-</div>
-<script src="main.js"></script>
+  <script src="main.js"></script>
 </body>
+
 </html>
