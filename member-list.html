@@ -33,7 +33,7 @@
 <body>
   <div class="sidebar">
     <div class="admindek">
-      <img src="assets/images/side-bar/logo.png" alt="LOGO" style="color: #fff;" />
+      <img src="images/logo-light.5273b2fd.png" alt="LOGO" style="color: #fff;" />
     </div>
     <div class="navigation sidebar-headings">
       <h5>Dashboard</h5>
@@ -216,11 +216,12 @@
                 <td class="border border-gray-300 p-2 text-center">-</td>
                 <td class="border border-gray-300 p-2 text-center">2024-10-20 15:46:01</td>
                 <td class="border border-gray-300 p-2 text-center sticky space-y-2" id="operate-btns">
-                  <button class="bg-gray-200 px-2 py-1 rounded text-sm">Edit</button>
+                  <button id="edit-btn" class="bg-gray-200 px-2 py-1 rounded text-sm">Edit</button>
                   <button class="bg-blue-500 text-white px-2 py-1 rounded text-sm">Continuous orders</button>
-                  <button class="bg-blue-500 text-white px-2 py-1 rounded text-sm">System increase or deduction</button>
-                  <button class="bg-gray-200 px-2 py-1 rounded text-sm">Withdrawal method</button>
+                  <button id="system-increase-decrease-btn" class="bg-blue-500 text-white px-2 py-1 rounded text-sm">System increase or deduction</button>
+                  <button id="withdrawl-method-btn" class="bg-gray-200 px-2 py-1 rounded text-sm">Withdrawal method</button>
                   <button class="bg-yellow-400 text-white px-2 py-1 rounded text-sm">Reset transaction count</button>
+                  <button class="bg-orange-500 text-white px-2 py-1 rounded text-sm">Disable</button>
                   <button class="bg-red-500 text-white px-2 py-1 rounded text-sm">Delete</button>
                 </td>
               </tr>
@@ -229,6 +230,147 @@
           </table>
         </div>
       </div>
+    </div>
+    <!-- edit dropdown -->
+    <div id="edit-form">
+      <div class="flex items-center justify-between sticky top-0 bg-white" id="form-header">
+        <h5>Edit</h5>
+        <i class="fa-sharp fa-solid fa-xmark" id="edit-close-btn"></i>
+      </div>
+      <form action="">
+        <div class="flex items-center mb-3 ">
+          <label for="">ID</label>
+          <input type="text" placeholder="947477479474" disabled style="cursor: not-allowed;">
+        </div>
+        <div class="flex items-center mb-3 ">
+          <label for="">Member Account</label>
+          <input type="text" placeholder="Crcry" required>
+        </div>
+        <div class="flex items-center mb-3 ">
+          <label for="">Member phone number</label>
+          <input type="tel" placeholder="3994756505" required>
+        </div>
+        <div class="flex items-center mb-3 ">
+          <label for="">Member level</label>
+          <select name="" id="" >
+            <option value="">VIP 1</option>
+            <option value="">VIP 2</option>
+            <option value="">VIP 3</option>
+            <option value="">VIP 4</option>
+          </select>
+        </div>
+        <div class="flex items-center mb-3 ">
+          <label for="">Login password</label>
+          <input type="password">
+        </div>
+        <div class="flex items-center mb-3 ">
+          <label for="">Transaction password</label>
+          <input type="password">
+        </div>
+        <div class="flex items-center mb-3 ">
+          <label for="">Superior ID</label>
+          <input type="number" placeholder="94">
+        </div>
+        <div class="flex items-center mb-3 ">
+          <label for="">Credibility</label>
+          <input type="number" placeholder="87" required>
+        </div>
+        <div class="flex items-center mb-3 ">
+          <label for="">multiples of consective orders</label>
+          <input type="numbers" required>
+        </div>
+        <div class="flex items-center mb-3 ">
+          <label for="">Member Type</label>
+          <select name="" id="">
+            <option value="">Real</option>
+            <option value="">Demo</option>
+          </select>
+        </div>
+        <div class="flex items-center mb-3 ">
+          <label for="">Transaction status</label>
+          <select name="" id="">
+            <option value="">Freeze</option>
+            <option value="">Normal</option>
+          </select>
+        </div>
+        <div class="mt-10 border-t pt-10 gap-5 flex justify-end">
+          <button id="edit-cancel-btn" class="bg-none border py-2 px-3  rounded">Cancel</button>
+          <input type="submit" name="" id="" value="Confirm" class="bg-blue py-2 px-3 rounded text-white" style="width:fit-content">
+        </div>
+      </form>
+    </div>
+    <!-- system increase decrease from -->
+    <div id="system-increase-decrease" style="height: fit-content;">
+      <div class="flex items-center justify-between sticky top-0 bg-white" id="form-header">
+        <h5>System increase or deduction</h5>
+        <i class="fa-sharp fa-solid fa-xmark" id="sid-close-btn"></i>
+      </div>
+      <form action="">
+        <div class="flex items-center mb-3 ">
+          <label for="">ID</label>
+          <input type="text" placeholder="947477479474" disabled style="cursor: not-allowed;">
+        </div>
+        <div class="flex items-center mb-3 ">
+          <label for="">Member Account</label>
+          <input type="text" placeholder="Crcry" disabled style="cursor: not-allowed;">
+        </div>
+        <div class="flex items-center mb-3 ">
+          <label for="">Type</label>
+          <select name="" id="">
+            <option value="">System Increase</option>
+            <option value="">System deduction</option>
+            <option value="">Bonus</option>
+          </select>
+        </div>
+        <div class="flex items-center mb-3 ">
+          <label for="">Ammount</label>
+          <input type="number" required>
+        </div>
+        <div class="mt-10 border-t pt-10 gap-5 flex justify-end">
+          <button id="sid-cancel-btn" class="bg-none border py-2 px-3  rounded">Cancel</button>
+          <input type="submit" name="" id="" value="Confirm" class="bg-blue py-2 px-3 rounded text-white" style="width:fit-content">
+        </div>
+      </form>
+    </div>
+    <!-- Withdrawl popup form -->
+    <div id="withdrawl-method" style="height: fit-content;">
+      <div class="flex items-center justify-between sticky top-0 bg-white" id="form-header">
+        <h5>Bank Card</h5>
+        <i class="fa-sharp fa-solid fa-xmark" id="withdrawl-close-btn"></i>
+      </div>
+      <form action="">
+        <div class="flex items-center mb-3 ">
+          <label for="">ID</label>
+          <input type="text" placeholder="947477479474" disabled style="cursor: not-allowed;">
+        </div>
+        <div class="flex items-center mb-3 ">
+          <label for="">Member Account</label>
+          <input type="text" placeholder="Crcry" disabled style="cursor: not-allowed;">
+        </div>
+        <div class="flex items-center mb-3 ">
+          <label for="">Type</label>
+          <select name="" id="">
+            <option value="">TRC-20</option>
+            <option value="">WISE</option>
+            <option value="">Revolut</option>
+            <option value="">Bank</option>
+            <option value="">CPF</option>
+            <option value="">E-mail</option>
+          </select>
+        </div>
+        <div class="flex items-center mb-3 ">
+          <label for="">Account</label>
+          <input type="text" required>
+        </div>
+        <div class="flex items-center mb-3 ">
+          <label for="">Name</label>
+          <input type="text" required>
+        </div>
+        <div class="mt-10 border-t pt-10 gap-5 flex justify-end">
+          <button id="withdrawl-cancel-btn" class="bg-none border py-2 px-3  rounded">Cancel</button>
+          <input type="submit" name="" id="" value="Confirm" class="bg-blue py-2 px-3 rounded text-white" style="width:fit-content">
+        </div>
+      </form>
     </div>
   </div>
   <script src="main.js"></script>

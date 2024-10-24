@@ -341,6 +341,62 @@
     overflow: auto;
   }
 
+  /* EDIT FORM */
+#edit-form,#system-increase-decrease,#withdrawl-method{
+    background-color: #fff;
+    position: relative;
+    top:-50rem;
+    color:#111;
+    width: 500px;
+    margin: 0 auto;
+    box-shadow: 1000rem 1000rem 1000rem rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    border: 2px solid #afafaf;
+    border-radius: 10px;
+    font-weight: 600;
+    height: 500px;
+    overflow:auto;
+    display: none;
+}
+#form-header{
+padding: 20px 20px 20px 20px;
+}
+#edit-form form,#system-increase-decrease form,#withdrawl-method form{
+    width: 90%;
+    margin: 20px auto;
+    padding:  0 20px;
+}
+#edit-form h5,#system-increase-decrease h5,#withdrawl-method h5{
+    font-size: 22px;
+}
+#edit-form i,#system-increase-decrease i,#withdrawl-method i{
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+#edit-form label,#system-increase-decrease label,#withdrawl-method label{
+    width:130px;
+    line-height: 1;
+    margin-right: 20px;
+}
+#edit-form input,#system-increase-decrease input,#withdrawl-method input{
+    width: -webkit-fill-available;
+    margin: 0 10px;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    padding: 3px 10px;
+    outline-color:#c5c5c5;
+}
+#edit-form select,#system-increase-decrease select,#withdrawl-method select{
+    width: -webkit-fill-available;
+    margin: 0 10px;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    padding: 3px 10px;
+    outline-color:#c5c5c5;
+}
+
+
 
   ::-webkit-scrollbar {
     width: 5px;   /* Width of the vertical scrollbar */
@@ -361,3 +417,11 @@
   ::-webkit-scrollbar-thumb:hover {
     background-color: #555;  /* Darker color when hovered */
   }
+
+  /* edit form scroll bar */
+  #edit-form::-webkit-scrollbar {
+    width: 0;   /* Width of the vertical scrollbar */
+    height: 0;  /* Height of the horizontal scrollbar */
+  }
+  
+  

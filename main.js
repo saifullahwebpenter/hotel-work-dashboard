@@ -111,8 +111,74 @@ document.querySelector('.zoom button').addEventListener('click', function() {
     }
 });
 
-  
-  
-  
+// EDIT FORM DROPDOWN
 
-  
+   // Get the buttons and the form
+   const editBtn = document.getElementById('edit-btn');
+   const editForm = document.getElementById('edit-form');
+   const cancelBtn = document.getElementById('edit-cancel-btn');
+   const closeBtn = document.getElementById('edit-close-btn');
+ 
+   // Show the form when the "Edit" button is clicked
+   editBtn.addEventListener('click', function() {
+     editForm.style.display = 'block';
+   });
+ 
+   // Hide the form when the "Cancel" button is clicked
+   cancelBtn.addEventListener('click', function() {
+     editForm.style.display = 'none';
+   });
+ 
+   // Hide the form when the "X" mark is clicked
+   closeBtn.addEventListener('click', function() {
+     editForm.style.display = 'none';
+   });
+
+
+ 
+  // INCREASE
+
+   // Get the buttons and the form
+   const sidBtn = document.getElementById('system-increase-decrease-btn');
+   const sidForm = document.getElementById('system-increase-decrease');
+   const cancelsidBtn = document.getElementById('sid-cancel-btn');
+   const closesidBtn = document.getElementById('sid-close-btn');
+ 
+   // Show the form when the "Edit" button is clicked
+   sidBtn.addEventListener('click', function() {
+     sidForm.style.display = 'block';
+   });
+ 
+   // Hide the form when the "Cancel" button is clicked
+   cancelsidBtn.addEventListener('click', function() {
+     sidForm.style.display = 'none';
+   });
+ 
+   // Hide the form when the "X" mark is clicked
+   closesidBtn.addEventListener('click', function() {
+     sidForm.style.display = 'none';
+   });
+
+
+  //  withdrawl popup form
+  // Get the buttons and the form
+  const withdrawlBtn = document.getElementById('withdrawl-method-btn');
+  const withdrawlForm = document.getElementById('withdrawl-method');
+  const cancelwithdrawlBtn = document.getElementById('withdrawl-cancel-btn');
+  const closewithdrawlBtn = document.getElementById('withdrawl-close-btn');
+
+  // Show the form when the "Edit" button is clicked
+  withdrawlBtn.addEventListener('click', function() {
+   withdrawlForm.style.display = 'block';
+  });
+
+  // Hide the form when the "Cancel" button is clicked
+  cancelwithdrawlBtn.addEventListener('click', function() {
+   withdrawlForm.style.display = 'none';
+  });
+
+  // Hide the form when the "X" mark is clicked
+  closewithdrawlBtn.addEventListener('click', function() {
+   withdrawlForm.style.display = 'none';
+  });
+

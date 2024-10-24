@@ -1,0 +1,20 @@
+ // Get the buttons and the form
+   const withdrawlBtn = document.getElementById('withdrawl-method-btn');
+   const withdrawlForm = document.getElementById('withdrawl-method');
+   const cancelwithdrawlBtn = document.getElementById('withdrawl-cancel-btn');
+   const closewithdrawlBtn = document.getElementById('withdrawl-close-btn');
+ 
+   // Show the form when the "Edit" button is clicked
+   withdrawlBtn.addEventListener('click', function() {
+    withdrawlForm.style.display = 'block';
+   });
+ 
+   // Hide the form when the "Cancel" button is clicked
+   cancelwithdrawlBtn.addEventListener('click', function() {
+    withdrawlForm.style.display = 'none';
+   });
+ 
+   // Hide the form when the "X" mark is clicked
+   closewithdrawlBtn.addEventListener('click', function() {
+    withdrawlForm.style.display = 'none';
+   });
