@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fail Withdraw Confirmation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        #fail-withdraw {
+            display: none; /* Initially hidden */
+            height: fit-content;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-top: 20px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<button id="fail-withdraw-btn" class="bg-red-500 text-white rounded-lg px-4 py-1 mt-3">Fail</button>
+
+<div id="fail-withdraw">
+    <div class="flex items-center sticky top-0 bg-white" id="form-header" style="border: none; padding: 0; line-height: 1;">
+        <i class="fa-regular fa-question mx-2"></i>
+        <h5>Hint</h5>
+    </div>
+    <p class="py-3">Confirmed failure recharge?</p>
+    <form action="">
+        <div class="gap-5 flex justify-end">
+            <button type="button" id="fail-withdraw-cancel-btn" class="bg-none py-1 px-2 border-gray-300 rounded" style="border: 1px solid gray;">Cancel</button>
+            <input type="submit" value="Fail" class="bg-red-600 py-1 px-2 rounded text-white" style="width: fit-content;">
+        </div>
+    </form>
+</div>
+
+<script>
+    document.getElementById('fail-withdraw-btn').addEventListener('click', function() {
+        document.getElementById('fail-withdraw').style.display = 'block'; // Show the div
+    });
+
+    document.getElementById('fail-withdraw-cancel-btn').addEventListener('click', function() {
+        document.getElementById('fail-withdraw').style.display = 'none'; // Hide the div
+    });
+</script>
+
+</body>
+</html>

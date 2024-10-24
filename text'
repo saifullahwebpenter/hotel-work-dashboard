@@ -1,20 +1,32 @@
- // Get the buttons and the form
-   const withdrawlBtn = document.getElementById('withdrawl-method-btn');
-   const withdrawlForm = document.getElementById('withdrawl-method');
-   const cancelwithdrawlBtn = document.getElementById('withdrawl-cancel-btn');
-   const closewithdrawlBtn = document.getElementById('withdrawl-close-btn');
- 
-   // Show the form when the "Edit" button is clicked
-   withdrawlBtn.addEventListener('click', function() {
-    withdrawlForm.style.display = 'block';
-   });
- 
-   // Hide the form when the "Cancel" button is clicked
-   cancelwithdrawlBtn.addEventListener('click', function() {
-    withdrawlForm.style.display = 'none';
-   });
- 
-   // Hide the form when the "X" mark is clicked
-   closewithdrawlBtn.addEventListener('click', function() {
-    withdrawlForm.style.display = 'none';
-   });
+<div class="p-4 bg-card rounded-lg shadow-md">
+  <h2 class="text-lg font-semibold mb-4">Crycry - Continuous orders</h2>
+  <div class="mb-4">
+    <button class="bg-primary text-primary-foreground hover:bg-primary/80 px-4 py-2 rounded">Refresh</button>
+    <button class="bg-secondary text-secondary-foreground hover:bg-secondary/80 px-4 py-2 rounded ml-2">+ Add</button>
+  </div>
+  <table class="min-w-full border-collapse border border-border">
+    <thead>
+      <tr class="bg-muted text-muted-foreground">
+        <th class="border border-border px-4 py-2">ID</th>
+        <th class="border border-border px-4 py-2">Number of consecutive orders</th>
+        <th class="border border-border px-4 py-2">ID</th>
+        <th class="border border-border px-4 py-2">After how many orders to start consecutive orders</th>
+        <th class="border border-border px-4 py-2">Creation time</th>
+        <th class="border border-border px-4 py-2">Operate</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="border border-border px-4 py-2">28222</td>
+        <td class="border border-border px-4 py-2">296</td>
+        <td class="border border-border px-4 py-2">ej29</td>
+        <td class="border border-border px-4 py-2">-</td>
+        <td class="border border-border px-4 py-2">2024-10-24 19:04:10</td>
+        <td class="border border-border px-4 py-2">
+          <button class="bg-secondary text-secondary-foreground hover:bg-secondary/80 px-2 py-1 rounded">Edit</button>
+          <button class="bg-destructive text-destructive-foreground hover:bg-destructive/80 px-2 py-1 rounded ml-2">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

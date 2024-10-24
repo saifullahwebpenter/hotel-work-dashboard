@@ -34,7 +34,7 @@
 .admindek{
     width:100%;
     display: flex;
-    padding: 20px 10px;
+    /* padding: 20px 10px; */
     border-bottom:2px solid #141c24;
     ;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -46,6 +46,9 @@
     padding: 0 10px 0 0;
     font-size: 18px;
     color: #fff;
+}
+.admindek img{
+    width: 250px;
 }
 .admindek h4{
     letter-spacing: 2px;
@@ -322,7 +325,6 @@
     position: sticky;
     right: 0;
     background-color: #ffffff;
-    z-index: 10;
   }
   /* Scroll styling for table */
   .scrollable-table {
@@ -343,12 +345,11 @@
 
   /* EDIT FORM */
 #edit-form,#system-increase-decrease,#withdrawl-method{
-    background-color: #fff;
-    position: relative;
-    top:-50rem;
+    background-color: #ebebeb;
+    position: fixed;
+    top:100px;
     color:#111;
     width: 500px;
-    margin: 0 auto;
     box-shadow: 1000rem 1000rem 1000rem rgba(0, 0, 0, 0.2);
     z-index: 100;
     border: 2px solid #afafaf;
@@ -357,9 +358,12 @@
     height: 500px;
     overflow:auto;
     display: none;
+    margin-left:150px;
 }
 #form-header{
 padding: 20px 20px 20px 20px;
+background-color: #ebebeb;
+border-bottom: 1px solid #ccc;
 }
 #edit-form form,#system-increase-decrease form,#withdrawl-method form{
     width: 90%;
@@ -382,20 +386,43 @@ padding: 20px 20px 20px 20px;
 #edit-form input,#system-increase-decrease input,#withdrawl-method input{
     width: -webkit-fill-available;
     margin: 0 10px;
-    border: 1px solid #ebebeb;
     border-radius: 5px;
     padding: 3px 10px;
-    outline-color:#c5c5c5;
+    outline-color:#aaa;
 }
 #edit-form select,#system-increase-decrease select,#withdrawl-method select{
     width: -webkit-fill-available;
     margin: 0 10px;
-    border: 1px solid #ebebeb;
     border-radius: 5px;
     padding: 3px 10px;
-    outline-color:#c5c5c5;
+    outline-color:#aaa;
 }
 
+/* CONFIRM DELETE */
+#confirm-delete,#reset-transaction-count,#fail-withdraw,#success-withdraw{
+    width:380px;
+    margin-left: 250px;
+    position: fixed;
+    top: 100px;
+    background-color: #ebebeb;
+    border: 2px solid #afafaf;
+    display: none;
+    color: #111;
+    height: fit-content;
+    padding:15px;
+    border-radius: 10px;
+}
+#confirm-delete i,#reset-transaction-count i,#fail-withdraw i,#success-withdraw i{
+    font-size: 17px;
+    font-weight: 600;
+}
+#confirm-delete h5,#reset-transaction-count h5,#fail-withdraw h5,#success-withdraw h5{
+    font-size: 20px;
+    font-weight: 600;
+}
+#confirm-delete p,#reset-transaction-count p,#fail-withdraw p,#success-withdraw p{
+    font-weight: 500;
+}
 
 
   ::-webkit-scrollbar {

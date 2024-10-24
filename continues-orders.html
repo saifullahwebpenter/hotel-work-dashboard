@@ -127,130 +127,52 @@
         <div class="bg-white shadow-sm p-4">
             <div class="container mx-auto flex items-center space-x-4">
                 <button class="px-4 py-2 bg-blue-500 text-white rounded-md"><a href="index.html">Home</a></button>
-                <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-md">Recharge list <a href="index.html"
+                <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-md">Continues Orders <a href="index.html"
                         class="fa-regular fa-xmark"></a></button>
                 <!-- <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-md">Withdrawal List</button> -->
             </div>
         </div>
 
         <div class="container mx-auto bg-white shadow-md rounded-lg p-6">
-            <h2 class="text-2xl font-semibold mb-6">Recharge List</h2>
+            <h2 class="text-2xl font-semibold mb-6">Continues Orders</h2>
 
-            <!-- Search Form -->
-            <div class="flex flex-wrap gap-4 mb-6">
-                <input type="text" placeholder="Member account"
-                    class="flex-grow border border-gray-300 rounded-lg px-4 py-2">
-                <select class="border border-gray-300 rounded-lg px-4 py-2">
-                    <option>Select Member type</option>
-                    <option>Real</option>
-                    <option>Guest</option>
-                </select>
-                <input type="text" placeholder="Platform" class="border border-gray-300 rounded-lg px-4 py-2">
-                <select class="border border-gray-300 rounded-lg px-4 py-2">
-                    <option>Select Status</option>
-                    <option>Order Confirmation</option>
-                    <option>Order Failed</option>
-                </select>
-                <div class="border border-gray-300 rounded-lg flex px-2 items-center">
-                    <label for="" class="font-bold">Start time</label>
-                    <input type="date" class=" px-4 py-2">
-                </div>
-                <div class="border border-gray-300 rounded-lg flex px-2 items-center">
-                    <label for="" class="font-bold">End time</label>
-                    <input type="date" class=" px-4 py-2">
-                </div>
-                <button class="bg-blue-500 text-white rounded-lg px-6 py-2 hover:bg-blue-600">Search</button>
+            <div class="mb-4 flex justify-end">
+                <a href="#"><button class="bg-gray-100 border text-black hover:bg-primary/80 px-4 py-2 rounded">Refresh</button></a>
+                <a href=""><button class="bg-blue-500 text-white hover:bg-secondary/80 px-4 py-2 rounded ml-2">+ Add</button></a>
             </div>
-
             <!-- Table -->
             <div class="overflow-x-auto" id="scrollable-data">
-                <table class="min-w-full bg-white border border-gray-300">
-                    <thead>
-                        <tr class="bg-gray-100">
-                            <th class="py-3 px-4 text-left border">ID</th>
-                            <th class="py-3 px-4 text-left border">Member account</th>
-                            <th class="py-3 px-4 text-left border">Member type</th>
-                            <th class="py-3 px-4 text-left border">Recharge amount</th>
-                            <th class="py-3 px-4 text-left border">Platform</th>
-                            <th class="py-3 px-4 text-left border">Status</th>
-                            <th class="py-3 px-4 text-left border">Creation Tme</th>
-                            <th class="py-3 px-4 text-left border sticky" id="operate">Operate</th>
+                <div class="p-4 bg-card rounded-lg">
+                    <table class="min-w-full border-collapse border border-border">
+                      <thead>
+                        <tr class="bg-muted text-muted-foreground bg-gray-100">
+                          <th class="border border-border px-4 py-2">ID</th>
+                          <th class="border border-border px-4 py-2">Number of consecutive orders</th>
+                          <th class="border border-border px-4 py-2">ID</th>
+                          <th class="border border-border px-4 py-2">After how many orders to start consecutive orders</th>
+                          <th class="border border-border px-4 py-2">Creation time</th>
+                          <th class="border border-border px-4 py-2 sticky" style="background-color:#f3f4f6;min-width: 155px;">Operate</th>
                         </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Repeat this row for each entry -->
+                      </thead>
+                      <tbody>
                         <tr>
-                            <td class="py-3 px-4 border">D183999671795...</td>
-                            <td class="py-3 px-4 border">Зарина Сериковна</td>
-                            <td class="py-3 px-4 border">
-                                <span class="bg-green-100 text-green-700 px-2 py-1 rounded-full">Real</span>
-                            </td>
-                            <td class="py-3 px-4 border">500.00</td>
-                            <td class="py-3 px-4 border">default</td>
-                            <td class="py-3 px-4 border">2024-10-22</td>
-                            <td class="py-3 px-4 border">Order Confirmation</td>
-                            <td class="py-3 px-4 border sticky" id="operate" style="background-color: #fff;">
-                                <button class="bg-blue-500 text-white rounded-lg px-4 py-1 hover:bg-blue-600">Details</button>
-                                <button id="success-withdraw-btn" class="bg-green-500 text-white rounded-lg px-4 py-1 ml-2">Success</button>
-                                <button id="fail-withdraw-btn" class="bg-red-500 text-white rounded-lg px-4 py-1 mt-3">Fail</button>
-                            </td>
+                          <td class="border border-border px-4 py-2">28222</td>
+                          <td class="border border-border px-4 py-2">296</td>
+                          <td class="border border-border px-4 py-2">ej29</td>
+                          <td class="border border-border px-4 py-2">-</td>
+                          <td class="border border-border px-4 py-2">2024-10-24 19:04:10</td>
+                          <td class="border border-border px-4 py-2 sticky">
+                            <button class="bg-gray-100 border text-black hover:bg-secondary/80 px-2 py-1 rounded">Edit</button>
+                            <button class="bg-red-500 text-white hover:bg-destructive/80 px-2 py-1 rounded ml-2">Delete</button>
+                          </td>
                         </tr>
-                        <!-- End repeat -->
-                    </tbody>
-                </table>
+                      </tbody>
+                    </table>
+                  </div>
+                  
             </div>
-        </div>
-        <!-- FAIL withdrawl btn popup -->
-        <div id="fail-withdraw" style="height: fit-content;">
-            <div class="flex items-center sticky top-0 bg-white" id="form-header" style="border: none; padding: 0; line-height: 1;">
-                <i class="fa-regular fa-question mx-2"></i>
-                <h5>Hint</h5>
-            </div>
-            <p class="py-3">Confirmed failure recharge?</p>
-            <form action="">
-                <div class="gap-5 flex justify-end">
-                    <button type="button" id="fail-withdraw-cancel-btn" class="bg-none py-1 px-2 border-gray-300 rounded" style="border: 1px solid gray;">Cancel</button>
-                    <input type="submit" value="Fail" class="bg-red-500 py-1 px-2 rounded text-white" style="width: fit-content;">
-                </div>
-            </form>
-            <script>
-                // Show the fail withdraw div when the "Fail" button is clicked
-                document.getElementById('fail-withdraw-btn').addEventListener('click', function() {
-                    document.getElementById('fail-withdraw').style.display = 'block'; // Show the div
-                });
             
-                // Hide the fail withdraw div when the "Cancel" button is clicked
-                document.getElementById('fail-withdraw-cancel-btn').addEventListener('click', function() {
-                    document.getElementById('fail-withdraw').style.display = 'none'; // Hide the div
-                });
-            </script>            
         </div>
-        
-          <!-- SUCCESS WITHDRAW BTN POPUP -->
-          <div id="success-withdraw" style="height: fit-content;">
-            <div class="flex items-center sticky top-0 bg-white" id="form-header" style="border: none;padding:0;line-height: 1;">
-              <i class="fa-regular fa-question mx-2"></i>
-              <h5>Hint</h5>
-            </div>
-            <p class="py-3">Confirmed success recharge?</p>
-            <form action="">
-              <div class="gap-5 flex justify-end">
-                <button id="success-withdraw-cancel-btn" class="bg-none py-1 px-2 border-gray-300 rounded" style="border: 1px solid gray;">Cancel</button>
-                <input type="submit" name="" id="" value="Success" class="bg-green-500 py-1 px-2 rounded text-white" style="width:fit-content">
-              </div>
-            </form>
-            <script>
-                // Show the fail withdraw div when the "Success" button is clicked
-                document.getElementById('success-withdraw-btn').addEventListener('click', function() {
-                    document.getElementById('success-withdraw').style.display = 'block'; // Show the div
-                });
-            
-                // Hide the success withdraw div when the "Cancel" button is clicked
-                document.getElementById('success-withdraw-cancel-btn').addEventListener('click', function() {
-                    document.getElementById('success-withdraw').style.display = 'none'; // Hide the div
-                });
-            </script>  
-          </div>
     </div>
     <script src="main.js"></script>
 </body>

@@ -170,6 +170,7 @@ document.querySelector('.zoom button').addEventListener('click', function() {
   // Show the form when the "Edit" button is clicked
   withdrawlBtn.addEventListener('click', function() {
    withdrawlForm.style.display = 'block';
+
   });
 
   // Hide the form when the "Cancel" button is clicked
@@ -181,4 +182,50 @@ document.querySelector('.zoom button').addEventListener('click', function() {
   closewithdrawlBtn.addEventListener('click', function() {
    withdrawlForm.style.display = 'none';
   });
+
+
+// CONFIRM DELETE
+ // Get the buttons and the form
+ const deleteBtn = document.getElementById('confirm-delete-btn');
+ const deleteForm = document.getElementById('confirm-delete');
+ const canceldeleteBtn = document.getElementById('delete-cancel-btn');
+
+ // Show the form when the "Edit" button is clicked
+ deleteBtn.addEventListener('click', function() {
+  deleteForm.style.display = 'block';
+
+ });
+
+ // Hide the form when the "Cancel" button is clicked
+ canceldeleteBtn.addEventListener('click', function() {
+  deleteForm.style.display = 'none';
+ });
+
+
+//  RESET TRANSACTION COUNT
+ // Get the buttons and the form
+ const resetBtn = document.getElementById('reset-transaction-count-btn');
+ const resetForm = document.getElementById('reset-transaction-count');
+ const cancelresetBtn = document.getElementById('reset-transaction-count-cancel-btn');
+
+ // Show the form when the "Edit" button is clicked
+ resetBtn.addEventListener('click', function() {
+  resetForm.style.display = 'block';
+
+ });
+
+ // Hide the form when the "Cancel" button is clicked
+ cancelresetBtn.addEventListener('click', function() {
+  resetForm.style.display = 'none';
+ });
+
+
+ document.getElementById('fail-withdraw-btn').addEventListener('click', function() {
+  document.getElementById('fail-withdraw').style.display = 'block'; // Show the div
+});
+
+document.getElementById('fail-withdraw-cancel-btn').addEventListener('click', function() {
+  document.getElementById('fail-withdraw').style.display = 'none'; // Hide the div
+});
+
 
