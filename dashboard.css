@@ -424,6 +424,21 @@ border-bottom: 1px solid #ccc;
     font-weight: 500;
 }
 
+#continues-orders-main-container{
+    width: 100%;
+    background-color: #ebebeb;
+}
+#continues-orders-container{
+    display: flex;
+    gap: 20px;
+}
+#continues-orders-container-left,#continues-orders-container-right{
+    width: 50%;
+    border-radius: 15px;
+    background-color:#fff;
+}
+
+
 
   ::-webkit-scrollbar {
     width: 5px;   /* Width of the vertical scrollbar */
