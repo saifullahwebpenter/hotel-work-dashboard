@@ -399,7 +399,7 @@ border-bottom: 1px solid #ccc;
 }
 
 /* CONFIRM DELETE */
-#confirm-delete,#reset-transaction-count,#fail-withdraw,#success-withdraw{
+#confirm-delete,#reset-transaction-count,#fail-withdraw,#success-withdraw,#delete-order{
     width:380px;
     margin-left: 250px;
     position: fixed;
@@ -412,15 +412,15 @@ border-bottom: 1px solid #ccc;
     padding:15px;
     border-radius: 10px;
 }
-#confirm-delete i,#reset-transaction-count i,#fail-withdraw i,#success-withdraw i{
+#confirm-delete i,#reset-transaction-count i,#fail-withdraw i,#success-withdraw i,#delete-order i{
     font-size: 17px;
     font-weight: 600;
 }
-#confirm-delete h5,#reset-transaction-count h5,#fail-withdraw h5,#success-withdraw h5{
+#confirm-delete h5,#reset-transaction-count h5,#fail-withdraw h5,#success-withdraw h5,#delete-order h5{
     font-size: 20px;
     font-weight: 600;
 }
-#confirm-delete p,#reset-transaction-count p,#fail-withdraw p,#success-withdraw p{
+#confirm-delete p,#reset-transaction-count p,#fail-withdraw p,#success-withdraw p,#delete-order p{
     font-weight: 500;
 }
 
